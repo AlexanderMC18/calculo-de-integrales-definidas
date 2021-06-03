@@ -1,0 +1,14 @@
+clc, clear
+%Alexander Martinez Cisneros
+%Grupo: 3202
+%Calculo de integrales definidas
+syms x;
+disc=(x)
+f=(sqrt(disc)+x)
+F=inline(char(f));
+Li=1
+Lf=4
+i=int(f,x)
+disp ('Resultado: ')
+F=int(f,x,Li,Lf)
+plot(Li:f:Lf)
